@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar color="primary" dark app >
+    <v-app-bar color="primary" dark app>
       <!-- <v-app-bar-nav-icon @click="drawer=!drawer"></v-app-bar-nav-icon> -->
       <v-toolbar-title>CNA</v-toolbar-title>
       <v-spacer></v-spacer>
@@ -13,6 +13,12 @@
       <!-- <v-divider vertical></v-divider> -->
       <v-btn v-on:click="goToLogin">login</v-btn>
     </v-app-bar>
+    <v-card
+      :height="100"
+    >
+      <!-- <v-card-title></v-card-title> -->
+    </v-card>
+
     <v-container
       class="tm-6"
     >
@@ -39,7 +45,8 @@
         </v-col>
         <v-col>  
           <v-card
-          class="mx-auto w-75"
+          class="mx-auto"
+        
           variant="outlined"
           >
             <v-img
