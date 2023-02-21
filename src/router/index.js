@@ -17,9 +17,14 @@ const routes = [
     ],
   },
   {
-    path: "/gacha001",
-    name: "Gacha001",
+    path: "/top",
+    name: "top",
     component: () => import("@/layouts/default/Gacha001.vue"),
+  },
+  {
+    path: "/info/gacha001",
+    name: "infoGacha001",
+    component: () => import("@/layouts/default/InfoGacha001.vue"),
   },
 ]
 
