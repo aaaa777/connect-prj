@@ -26,6 +26,11 @@ const routes = [
     name: "infoGacha001",
     component: () => import("@/layouts/default/InfoGacha001.vue"),
   },
+  {
+    path: "/list",
+    name: "listNFT",
+    component: () => import("@/layouts/default/ListNFT.vue"),
+  },
 ]
 
 const router = createRouter({

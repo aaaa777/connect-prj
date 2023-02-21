@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <!-- <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-parallax> -->
     <v-app-bar color="primary" dark app>
       <!-- <v-app-bar-nav-icon @click="drawer=!drawer"></v-app-bar-nav-icon> -->
       <v-toolbar-title>CNA</v-toolbar-title>
@@ -16,8 +17,10 @@
     <v-card
       :height="100"
     >
-      <!-- <v-card-title></v-card-title> -->
+       <v-card-title></v-card-title>
     </v-card>
+
+    
 
     <v-container
       class="tm-6"
