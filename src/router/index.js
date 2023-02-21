@@ -16,6 +16,11 @@ const routes = [
       },
     ],
   },
+  {
+    path: "/gacha001",
+    name: "Gacha001",
+    component: () => import("@/layouts/default/Gacha001.vue"),
+  },
 ]
 
 const router = createRouter({
