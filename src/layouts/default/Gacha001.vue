@@ -17,7 +17,9 @@
         <v-text-field class="" clearable label="search" variant="outlined" hide-details="auto"></v-text-field>
       </div>
       <!-- <v-divider vertical></v-divider> -->
-      <v-btn v-on:click="goToLogin">login</v-btn>
+      <!-- <v-btn v-on:click="goToLogin">login</v-btn> -->
+      <v-btn v-on:click="goToInfo001">g001</v-btn>
+      <v-btn v-on:click="goToList">owned</v-btn>
     </v-app-bar>
     </v-container>
     <v-container></v-container>
@@ -206,6 +208,12 @@ export default {
     },
     goToLogin() {
       this.$router.push("/login")
+    },
+    goToInfo001() {
+      this.$router.push("/info/gacha001")
+    },
+    goToList() {
+      this.$router.push("/list")
     },
   }
 }

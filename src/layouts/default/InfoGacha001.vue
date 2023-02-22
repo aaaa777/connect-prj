@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <!-- <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-parallax> -->
+    <v-container>
     <v-app-bar color="primary" dark app>
       <!-- <v-app-bar-nav-icon @click="drawer=!drawer"></v-app-bar-nav-icon> -->
       <v-toolbar-title>CNA</v-toolbar-title>
@@ -14,51 +15,69 @@
       <!-- <v-divider vertical></v-divider> -->
       <v-btn v-on:click="goToLogin">login</v-btn>
     </v-app-bar>
-    <v-card
-      :height="100"
+    </v-container>
+
+    <v-container
     >
-       <v-card-title></v-card-title>
-    </v-card>
+
+    <v-container
+    ></v-container>
 
     
 
     <v-container
-      class="tm-6"
+      
     >
-      <v-row>
-        <v-col>
-
-
+      <v-row
+        width="auto"
+      >
+        <v-col
+          width="auto"
+          cols="12"
+          sm="6"
+        >
           <v-card
           class="mx-auto "
+          fill-height
           variant="outlined"
+          v-on:click="goToGacha001Cm"
           >
             <v-img
               
-              aspect-ratio="16/9"
+              aspect-ratio="4/3"
               cover
-              src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+              src="@/assets/gachacm.png"
             ></v-img>
             <v-card-actions>
-              <v-btn variant="outlined">
+              <v-spacer></v-spacer>
+              <v-btn
+                variant="outlined"
+                
+                >
                 回す！
               </v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
-        <v-col>  
+        <v-col
+          width="auto"
+          cols="12"
+          sm="6"
+        >  
           <v-card
           class="mx-auto"
-        
+          fill-height
           variant="outlined"
+          v-on:click="goToGacha001Ex"
           >
             <v-img
               
-              aspect-ratio="16/9"
+              aspect-ratio="4/3"
               cover
-              src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+              src="@/assets/gachaex.png"
             ></v-img>
             <v-card-actions>
+              <v-spacer></v-spacer>
               <v-btn variant="outlined">
                 回す！
               </v-btn>
@@ -68,8 +87,35 @@
         </v-col>
       </v-row>
     </v-container>
+
+  </v-container>
   </v-app>
+  
 </template>
 
 <script>
+export default {
+  data(){
+    return {
+    }
+  },
+  methods: {
+    goToGacha001Cm() {
+      this.$router.push("/spin/gacha001/0")
+    },
+    goToGacha001Ex() {
+      this.$router.push("/spin/gacha001/1")
+    },
+  }
+}
 </script>
+
+<style>
+.bg {
+   background-color: #486d46;            /* 背景色 */
+   background-image: url("/src/assets/bg03.jpg"); /* 画像 */
+   background-size: cover;               /* 全画面 */
+   background-attachment: fixed;         /* 固定 */
+   background-position: center center;   /* 縦横中央 */
+}
+</style>
