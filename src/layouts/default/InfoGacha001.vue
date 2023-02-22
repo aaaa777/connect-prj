@@ -6,14 +6,13 @@
       <!-- <v-app-bar-nav-icon @click="drawer=!drawer"></v-app-bar-nav-icon> -->
       <v-toolbar-title>CNA</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn v-on:click="goToAbout">about</v-btn>
-      <!-- <v-divider vertical></v-divider> -->
-      <v-btn v-on:click="goToNews">news</v-btn>
+      <v-btn v-on:click="goToInfo001">G001</v-btn>
+      <v-btn v-on:click="goToList">Owned</v-btn>
       <div class=" w-25">
         <v-text-field class="" clearable label="search" variant="outlined" hide-details="auto"></v-text-field>
       </div>
       <!-- <v-divider vertical></v-divider> -->
-      <v-btn v-on:click="goToLogin">login</v-btn>
+      <!-- <v-btn v-on:click="goToLogin">login</v-btn> -->
     </v-app-bar>
     </v-container>
 
