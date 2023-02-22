@@ -42,7 +42,7 @@
                   :width="150"
                   aspect-ratio="1/1"
                   cover
-                  v-bind:src="'/src/assets/n00' + j + '.png'"
+                  v-bind:src="'/assets/n00' + j + '.png'"
                   
                 ></v-img>
                 </v-sheet>
