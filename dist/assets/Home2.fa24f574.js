@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper.cdc0426e.js";import{ah as c,o as r,b as n}from"./index.74b7fc90.js";const s={};function t(_,a){const o=c("Discord");return r(),n(o)}const p=e(s,[["render",t]]);export{p as default};
