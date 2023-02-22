@@ -49,6 +49,7 @@
               src="@/assets/gachacm.png"
             ></v-img>
             <v-card-actions>
+              普通ガチャ
               <v-spacer></v-spacer>
               <v-btn
                 variant="outlined"
@@ -77,6 +78,7 @@
               src="@/assets/gachaex.png"
             ></v-img>
             <v-card-actions>
+              高級ガチャ
               <v-spacer></v-spacer>
               <v-btn variant="outlined">
                 回す！
@@ -105,6 +107,24 @@ export default {
     },
     goToGacha001Ex() {
       this.$router.push("/spin/gacha001/1")
+    },
+    goToNews() {
+      this.$router.push("/news")
+    },
+    goToAbout() {
+      this.$router.push("/about")
+    },
+    goToHome() {
+      this.$router.push("/home")
+    },
+    goToLogin() {
+      this.$router.push("/login")
+    },
+    goToInfo001() {
+      this.$router.push("/info/gacha001")
+    },
+    goToList() {
+      this.$router.push("/list")
     },
   }
 }

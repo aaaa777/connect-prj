@@ -17,6 +17,11 @@ const routes = [
     name: "listNFT",
     component: () => import("@/layouts/default/ListNFT.vue"),
   },
+  {
+    path: "/spin/gacha001/0",
+    name: "demoEffect",
+    component: () => import("@/layouts/default/GachaEffect.vue"),
+  },
 ]
 
 const router = createRouter({
